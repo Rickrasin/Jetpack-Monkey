@@ -3,13 +3,16 @@
 ## I Am Rickras
    My name is Rickson de Oliveira Viana.
    
-   I'd say I've been developing games for about 8 months (at the time of this readme).
+   I'd say I've been developing games for about 10 months (at the time of this readme).
   
    
-   I developed half of a project that I am very proud of and that one day I will finish called Project Slime, but I put it on hold due to the lack of time from my current job and college.
+   I was very happy with my result developing Pong, I believe it should have started like this from the beginning, but I won't regret it. I even remembered to upload to Git a little late,
+but I made a procedural level generation system in this very cool game.
 
-   I made this project with some friends to deepen my knowledge of Unity. This project helped me to understand that it is indeed possible to make games, I discovered my potential to do so through it.
-So, with the aim of deepening my knowledge even further in games and creating a solid portfolio to acquire my first vacancy as a game programmer, I started the 20 Games Challenge.
+   This system has been my best so far, it generates a procedurally generated map divided into sections. Currently it just does that, it creates a map with the sections that I send and divides them randomly, I will now increase the generation of coins and enemies on it,
+soon I'm going to make the parent script of everything choose between these 3 what each section will be, a section of coins, or enemies or obstacles.
+
+I am very happy with my result and this will be another game that I proudly add to my portfolio.
 
 ## Project for 20 games challenge
 
