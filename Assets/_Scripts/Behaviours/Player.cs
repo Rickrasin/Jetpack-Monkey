@@ -53,7 +53,7 @@ namespace JetMonkey.Player
         private void MoveY()
         {
             //Limitador de velocidade
-            RB.velocity = new Vector2(RB.velocity.x, Mathf.Min(RB.velocity.y, maxFlyVelocity));
+            RB.velocity = new Vector2(6, Mathf.Min(RB.velocity.y, maxFlyVelocity));
 
             float newAccelerations = 0f;
             if (isJumping)
@@ -61,7 +61,7 @@ namespace JetMonkey.Player
                  newAccelerations = Mathf.Lerp(0f, acceleration, 0.5f);
                 isJumping = false;
             }
-                RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y + newAccelerations);
+                RB.velocity = new Vector2(6, RB.velocity.y + newAccelerations);
                 //Acelera o Player em Y
                 
         }
@@ -70,7 +70,7 @@ namespace JetMonkey.Player
         {
             if(RB.velocity.y < 0f)
             {
-            RB.velocity = new Vector2(RB.velocity.x, Mathf.Max(RB.velocity.y, -maxFallVelocity));
+            RB.velocity = new Vector2(6, Mathf.Max(RB.velocity.y, -maxFallVelocity));
 
             }
 
