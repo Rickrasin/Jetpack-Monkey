@@ -1,56 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1800923640279534548
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1800923640279534549}
-  - component: {fileID: 1800923640279534550}
-  m_Layer: 0
-  m_Name: Tree
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1800923640279534549
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800923640279534548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1800923640328446995}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1800923640279534550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800923640279534548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9001bae6071699b44a24114e13e4f1fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  decorationYOffset: 4
-  decorationDistance: {x: 12, y: 16}
-  decorationPrefabs:
-  - {fileID: 7397921610135255792, guid: db8e0d06f3c590e42a0422af619127b0, type: 3}
-  - {fileID: 6117027596041905949, guid: 2676e80b64aa0f04b80d7e9a2244d3e4, type: 3}
-  - {fileID: 7993996415899326226, guid: c2368c9e7af5bed41b95a521fe633a1a, type: 3}
-  decorationParent: {fileID: 1800923640279534549}
 --- !u!1 &1800923640328446993
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +11,7 @@ GameObject:
   - component: {fileID: 1800923640328446995}
   - component: {fileID: 1800923640328446994}
   m_Layer: 0
-  m_Name: Forest - Section
+  m_Name: Transition - Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +30,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1800923640971934676}
-  - {fileID: 1800923640279534549}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -97,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2951f4891d83e3f42bf447d4d661638c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sectionWidth: 160
+  sectionWidth: 20
 --- !u!1 &1800923640971934635
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800923640971934676}
   - component: {fileID: 1800923640971934677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,10 +90,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7517874ebaf1b449343ca2ccf1b473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YPos: 0
-  platformXOffset: 1
-  platformPrefabs:
-  - {fileID: 4684091691464198201, guid: b3f6cc308e2ff2a4b90a4c8d9c1acc7f, type: 3}
-  - {fileID: 4684091691464198201, guid: 41855888b9e237941afe73aeb93f49ed, type: 3}
-  - {fileID: 4684091691464198201, guid: 9439ec4c920975441a25d8733b0f8b01, type: 3}
-  platformParent: {fileID: 1800923640971934676}
+  tilesYOffset: 0
+  tilesDistance: {x: 1, y: 1}
+  addColliders: 1
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  priorityLayer: -1
+  tilesSprites:
+  - {fileID: 1085018455, guid: 3006fed5af9723146be763d84fb118fa, type: 3}
+  - {fileID: -373479739, guid: 3006fed5af9723146be763d84fb118fa, type: 3}
